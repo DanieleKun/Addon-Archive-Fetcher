@@ -1,6 +1,6 @@
-# Archive Fetcher addon specification — version 1
+# Cartshelf addon specification — version 1
 
-An **addon** tells the Archive Fetcher app *where* things are on the Internet Archive. It is a single JSON file
+An **addon** tells the Cartshelf app *where* things are: on the Internet Archive or elsewhere on the web. It is a single JSON file
 that contains **no code and no files**: only a catalog of Internet Archive items, grouped by manufacturer and console.
 
 The app ships with no catalog of its own. Everything it shows comes from the addons the user installed.
@@ -28,7 +28,7 @@ Users install an addon in the app under **Addons → Add addon** by pasting the 
 of the form:
 
 ```
-archivefetcher://addon?url=<percent-encoded https URL of the manifest>
+cartshelf://addon?url=<percent-encoded https URL of the manifest>
 ```
 
 The link only pre-fills the "Add addon" screen; the user always has to confirm. Debug builds of the app also accept
@@ -92,7 +92,16 @@ A **collection** is a titled pointer to part of an Internet Archive item. In the
 | `source` | object | yes      | Where the files are. See below. |
 | `format` | string | no       | Lower-case file type of what the user ends up with: `iso`, `chd`, `zip`, `cso`… (`^[a-z0-9]{1,8}$`). Shown as the *Format* filter. When missing, the app looks for a `.ext` word in the title (`PSP Redump .chd`) and then uses the file extension. Set it when archives hide the real format, e.g. `.zip` files that contain ISOs. |
 
-**Source** — only one type exists in spec version 1:
+**Source** — `type` says where the files are. Four types exist:
+
+| `type`             | Files come from |
+|--------------------|-----------------|
+| `archive.org-item` | An Internet Archive item (below). |
+| `http-directory`   | A folder page on any website, the "Index of /…" page most web servers generate ([4.1](#41-http-directory)). |
+| `file-list`        | A JSON document that lists names and addresses ([4.2](#42-file-list)). |
+| `files`            | A list written directly in the addon ([4.3](#43-files)). |
+
+**`archive.org-item`**
 
 | Field  | Type   | Required | Rules |
 |--------|--------|----------|-------|
@@ -105,8 +114,67 @@ Which files the user sees is decided by the app from the item's public metadata 
 skipping Internet Archive's own metadata files, thumbnails and torrents. Items that require an Internet Archive account
 are marked as locked in the app.
 
+### 4.1 `http-directory`
+
+| Field        | Type   | Required | Rules |
+|--------------|--------|----------|-------|
+| `type`       | string | yes      | `"http-directory"`. |
+| `url`        | string | yes      | The folder page, an `https://` address on the public internet (see [web addresses](#web-addresses)). |
+| `extensions` | array  | yes      | 1–20 lower-case extensions without the dot (`["gb", "zip"]`). Only links to files with these extensions are listed. |
+
+The app downloads the page (at most 8 MiB) and lists every link to a file with one of the `extensions` **on the same
+host** as the page. Links to sub-folders, parent folders, sorting options and other sites are ignored, and the folder
+is not read recursively: use one collection per folder. Sizes and checksums are unknown.
+
+### 4.2 `file-list`
+
+| Field  | Type   | Required | Rules |
+|--------|--------|----------|-------|
+| `type` | string | yes      | `"file-list"`. |
+| `url`  | string | yes      | The address of the list, `https://` on the public internet. |
+
+The list is a JSON document of at most 16 MiB and 100 000 files, which you can generate and host anywhere:
+
+```json
+{
+  "files": [
+    { "name": "Tobu Tobu Girl (World).gb", "url": "https://example.org/gb/tobu.gb", "size": 65536, "md5": "…" }
+  ]
+}
+```
+
+Each entry follows the rules of [4.3](#43-files). Entries that break a rule are skipped; the rest of the list still works.
+Unknown fields are ignored. Use it when the files are spread over several places, or to publish sizes and checksums.
+
+### 4.3 `files`
+
+| Field   | Type   | Required | Rules |
+|---------|--------|----------|-------|
+| `type`  | string | yes      | `"files"`. |
+| `files` | array  | yes      | 1–2 000 file entries. |
+
+**File entry**
+
+| Field  | Type    | Required | Rules |
+|--------|---------|----------|-------|
+| `name` | string  | yes      | The file name shown to the user and saved on the device, 1–300 characters, without `/`, `\` and not `.` or `..`. Unique within the collection. Use No-Intro style names (`Game (Italy).gb`) so the region and language filters work. |
+| `url`  | string  | yes      | Direct download address, `https://` on the public internet. |
+| `size` | integer | no       | Size in bytes, shown to the user. |
+| `md5`  | string  | no       | 32 hexadecimal characters. When present, the app checks every finished download against it. |
+
+### Web addresses
+
+Every `url` of a web source, and every download address it lists, MUST use `https://` and MUST NOT point to the device
+or to a private network (`localhost`, `*.local`, `10.x`, `172.16–31.x`, `192.168.x`, `169.254.x`, IPv6 local
+addresses…). The app also refuses names that only resolve to such addresses, so an addon cannot make the app reach a
+router or other machines at home. Debug builds accept `http://` for the local test hosts listed in
+[1](#1-hosting-and-installing). `expand` is only valid for `archive.org-item`.
+
+### Unknown types
+
 A collection with an **unknown `source.type`** is skipped by apps that do not know it (validators report a warning), so
-future source types can be added without breaking old apps.
+future source types can be added without breaking old apps. Apps released before the web types appeared skip them in
+the same way, which is why adding them did not change `spec`.
 
 ## 5. How the app merges addons
 
@@ -139,7 +207,7 @@ new source types) do not increment it.
 - Only `https://` URLs are accepted (plus the local test hosts in debug builds).
 - File paths from manifests and from the Internet Archive are sanitized before anything is written to the device.
 - Fetching a manifest reveals the user's IP address to the host that serves it, like any web request. Nothing else
-  about the user is sent. Downloads go straight from `archive.org` to the device.
+  about the user is sent. Downloads go straight from the host that serves each file (`archive.org`, or the site named by a web source) to the device; Internet Archive credentials are only ever sent to `archive.org`.
 - Addon authors are responsible for what their addon points to. The app does not host, mirror or index files.
 
 ## 9. Validating a manifest
@@ -156,3 +224,4 @@ the validator wins.
 ## 10. Changelog
 
 - **1** — first version: categories, consoles, collections, the `archive.org-item` source.
+- **1, additive** — the `http-directory`, `file-list` and `files` sources, and the rules for web addresses.

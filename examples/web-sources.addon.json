@@ -1,0 +1,53 @@
+{
+  "spec": 1,
+  "id": "web-sources-example",
+  "name": "Web sources example",
+  "version": "1.0.0",
+  "description": "Shows the three web source types. Replace the example.org addresses with real ones.",
+  "categories": [
+    {
+      "id": "nintendo",
+      "name": "Nintendo",
+      "consoles": [
+        {
+          "id": "nintendo-gb",
+          "name": "Nintendo - Game Boy",
+          "collections": [
+            {
+              "title": "Homebrew folder",
+              "source": {
+                "type": "http-directory",
+                "url": "https://example.org/homebrew/gb/",
+                "extensions": [
+                  "gb",
+                  "zip"
+                ]
+              }
+            },
+            {
+              "title": "Homebrew list",
+              "source": {
+                "type": "file-list",
+                "url": "https://example.org/homebrew/gb.json"
+              }
+            },
+            {
+              "title": "Picked files",
+              "format": "gb",
+              "source": {
+                "type": "files",
+                "files": [
+                  {
+                    "name": "Example Game (World).gb",
+                    "url": "https://example.org/homebrew/example.gb",
+                    "size": 65536
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

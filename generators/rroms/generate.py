@@ -44,7 +44,7 @@ ADDON_DESCRIPTION = (
 )
 HOMEPAGE = "https://r-roms.github.io/"
 RAW_BASE = "https://raw.githubusercontent.com/r-roms/r-roms.github.io/HEAD"
-USER_AGENT = "ArchiveFetcherAddons/1.0 (catalog generator)"
+USER_AGENT = "CartshelfAddons/1.0 (catalog generator)"
 FORMAT_IN_TITLE = re.compile(r"(?:^|\s)\.([A-Za-z0-9]{2,5})\b")
 
 

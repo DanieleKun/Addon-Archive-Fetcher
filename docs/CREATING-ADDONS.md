@@ -1,6 +1,6 @@
 # Creating an addon
 
-This guide takes you from nothing to an addon that users can install in Archive Fetcher. You need a text editor and
+This guide takes you from nothing to an addon that users can install in Cartshelf. You need a text editor and
 Python 3.10+ (only for the validator). The exact format is in the [specification](SPEC.md).
 
 ## 1. What an addon is
@@ -58,6 +58,20 @@ just does not merge with other addons. Open a pull request on this repository to
   load a whole collection at once and filter inside it.
 - **Keep ids stable.** Changing `id` makes the app treat your addon as a new one.
 
+### Files that are not on the Internet Archive
+
+A collection can also point to any public HTTPS website (full rules in [SPEC.md, section 4](SPEC.md#4-collections-and-sources)):
+
+- **A folder page** — `{"type": "http-directory", "url": "https://…/gb/", "extensions": ["gb", "zip"]}` lists the
+  files of an "Index of /…" page, one folder per collection.
+- **A list you publish** — `{"type": "file-list", "url": "https://…/gb.json"}` points to a JSON file with
+  `{"files": [{"name", "url", "size", "md5"}]}`. Generate it with a script when the files live in several places, or to
+  give sizes and checksums.
+- **A few files** — `{"type": "files", "files": [{"name", "url"}]}` writes them straight into the addon.
+
+[`examples/web-sources.addon.json`](../examples/web-sources.addon.json) shows all three. Name files in No-Intro style
+(`Game (Italy).gb`) so the region and language filters work, and only point to files you are allowed to share.
+
 ## 6. Validate
 
 ```
@@ -70,7 +84,7 @@ Fix every `error`. Read the `warning`s: an id that is not in the canonical list 
 
 **On a phone or handheld:** publish the file (step 8) and paste its URL under *Addons → Add addon*, or copy the file
 to the device and use *Addons → Add from file* (an addon added from a file is not refreshed automatically).
-A link of the form `archivefetcher://addon?url=<URL-encoded address>` opens the app with the address already filled
+A link of the form `cartshelf://addon?url=<URL-encoded address>` opens the app with the address already filled
 in; the user still confirms it.
 
 **On your computer, before publishing** (debug builds of the app, including the Android emulator):
@@ -115,7 +129,7 @@ any language. Please:
 
 ## 10. Responsibility
 
-You are responsible for what your addon points to. Archive Fetcher hosts no files and the addon format cannot contain
+You are responsible for what your addon points to. Cartshelf hosts no files and the addon format cannot contain
 any. Point only to items the Internet Archive serves, respect its terms and any takedown it applies, and do not publish
 addons that link to content you have no right to share. Users decide which addons they install.
 

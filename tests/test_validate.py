@@ -138,13 +138,53 @@ class Rejections(unittest.TestCase):
         self.assertFalse(validate_bytes(b" " * (5 * 1024 * 1024 + 1), None).ok)
 
 
+class WebSources(unittest.TestCase):
+    def check(self, source: dict) -> list[str]:
+        manifest = base()
+        first_collection(manifest)["source"] = source
+        report = validate_manifest(manifest)
+        self.assertEqual([], [w for w in report.warnings if "skip" in w])
+        return report.errors
+
+    def test_valid_web_sources(self):
+        self.assertEqual([], self.check({"type": "http-directory", "url": "https://example.org/gb/", "extensions": ["gb", "zip"]}))
+        self.assertEqual([], self.check({"type": "file-list", "url": "https://example.org/gb.json"}))
+        self.assertEqual([], self.check({"type": "files", "files": [
+            {"name": "Tobu Tobu Girl (World).gb", "url": "https://example.org/t.gb", "size": 65536,
+             "md5": "0123456789abcdef0123456789ABCDEF"}]}))
+
+    def test_web_sources_need_public_https_addresses(self):
+        for url in ("http://example.org/a.json", "https://192.168.1.1/a.json", "https://nas.local/a.json",
+                    "https://127.0.0.1/a.json", "https://[::1]/a.json", "ftp://example.org/a.json"):
+            with self.subTest(url=url):
+                self.assertTrue(self.check({"type": "file-list", "url": url}))
+
+    def test_directory_needs_extensions(self):
+        self.assertTrue(self.check({"type": "http-directory", "url": "https://example.org/gb/"}))
+        self.assertTrue(self.check({"type": "http-directory", "url": "https://example.org/gb/", "extensions": ["GB!"]}))
+
+    def test_inline_files_are_checked(self):
+        for files in (
+            [],
+            [{"name": "../evil.gb", "url": "https://example.org/e.gb"}],
+            [{"name": "a.gb", "url": "https://example.org/a.gb", "md5": "nope"}],
+            [{"name": "a.gb", "url": "https://example.org/a.gb", "size": -1}],
+            [{"name": "a.gb", "url": "https://example.org/a.gb"}, {"name": "a.gb", "url": "https://example.org/b.gb"}],
+        ):
+            with self.subTest(files=files):
+                self.assertTrue(self.check({"type": "files", "files": files}))
+
+    def test_expand_is_only_for_internet_archive(self):
+        self.assertTrue(self.check({"type": "file-list", "url": "https://example.org/a.json", "expand": "zip"}))
+
+
 class Warnings(unittest.TestCase):
     def test_unknown_source_type_is_a_warning_not_an_error(self):
         manifest = base()
         first_collection(manifest)["source"] = {"type": "future-source", "id": "x"}
         report = validate_manifest(manifest)
         self.assertTrue(report.ok)
-        self.assertTrue(any("unknown to spec 1" in warning for warning in report.warnings))
+        self.assertTrue(any("skip this collection" in warning for warning in report.warnings))
 
     def test_unknown_console_id_warns_about_merging(self):
         manifest = base()

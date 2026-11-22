@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate addon manifests against the Archive Fetcher addon spec.
+"""Validate addon manifests against the Cartshelf addon spec.
 
 Usage:
     python tools/validate_addon.py my.addon.json [more.addon.json ...]

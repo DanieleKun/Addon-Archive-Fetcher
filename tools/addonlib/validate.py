@@ -1,10 +1,11 @@
-"""Reference validator for the Archive Fetcher addon manifest, spec version 1.
+"""Reference validator for the Cartshelf addon manifest, spec version 1.
 
 Pure standard library. The rules here mirror docs/SPEC.md; the app applies the same limits when it installs an addon.
 """
 
 from __future__ import annotations
 
+import ipaddress
 import json
 import re
 from dataclasses import dataclass, field
@@ -13,6 +14,13 @@ from urllib.parse import urlsplit
 
 SPEC_VERSION = 1
 SOURCE_ARCHIVE_ITEM = "archive.org-item"
+SOURCE_HTTP_DIRECTORY = "http-directory"
+SOURCE_FILE_LIST = "file-list"
+SOURCE_FILES = "files"
+WEB_SOURCES = (SOURCE_HTTP_DIRECTORY, SOURCE_FILE_LIST, SOURCE_FILES)
+MAX_EXTENSIONS = 20
+MAX_INLINE_FILES = 2_000
+MD5 = re.compile(r"[0-9a-fA-F]{32}")
 
 MAX_BYTES = 5 * 1024 * 1024
 MAX_CATEGORIES = 100
@@ -69,6 +77,76 @@ def _safe_path(path: str) -> bool:
     return all(part not in ("", ".", "..") for part in path.split("/"))
 
 
+def _is_private_host(host: str) -> bool:
+    name = host.lower().rstrip(".")
+    if name == "localhost" or name.endswith((".localhost", ".local", ".internal")):
+        return True
+    try:
+        address = ipaddress.ip_address(name.strip("[]"))
+    except ValueError:
+        return False
+    return not address.is_global
+
+
+def _is_public_https_url(value: Any) -> bool:
+    """https only, and never the device itself or a home network: the app refuses those addresses too."""
+    if not isinstance(value, str) or len(value) > 2000:
+        return False
+    parts = urlsplit(value)
+    return parts.scheme == "https" and bool(parts.hostname) and not _is_private_host(parts.hostname)
+
+
+def _safe_name(name: Any) -> bool:
+    return (isinstance(name, str) and name.strip() != "" and len(name) <= 300 and "/" not in name
+            and "\\" not in name and "\x00" not in name and name not in (".", ".."))
+
+
+def _validate_web_source(kind: str, source: dict, where: str, report: Report) -> None:
+    if source.get("expand") is not None:
+        report.errors.append(f"{where}.expand: only for {SOURCE_ARCHIVE_ITEM} sources")
+    if kind in (SOURCE_HTTP_DIRECTORY, SOURCE_FILE_LIST):
+        if not _is_public_https_url(source.get("url")):
+            report.errors.append(f"{where}.url: must be an https:// address on the public internet")
+    if kind == SOURCE_HTTP_DIRECTORY:
+        extensions = source.get("extensions")
+        if not (isinstance(extensions, list) and 1 <= len(extensions) <= MAX_EXTENSIONS):
+            report.errors.append(f"{where}.extensions: 1-{MAX_EXTENSIONS} file extensions")
+        else:
+            for i, ext in enumerate(extensions):
+                if not (isinstance(ext, str) and FORMAT.fullmatch(ext)):
+                    report.errors.append(f"{where}.extensions[{i}]: must match ^{FORMAT.pattern}$")
+    if kind == SOURCE_FILES:
+        files = source.get("files")
+        if not (isinstance(files, list) and 1 <= len(files) <= MAX_INLINE_FILES):
+            report.errors.append(f"{where}.files: 1-{MAX_INLINE_FILES} files")
+            return
+        names: set[str] = set()
+        for i, entry in enumerate(files):
+            _validate_file(entry, f"{where}.files[{i}]", report, names)
+
+
+def _validate_file(entry: Any, where: str, report: Report, names: set[str]) -> None:
+    """Rules for an inline file; the app applies the same ones to every entry of a file-list feed."""
+    if not isinstance(entry, dict):
+        report.errors.append(f"{where}: must be an object")
+        return
+    name = entry.get("name")
+    if not _safe_name(name):
+        report.errors.append(f"{where}.name: 1-300 characters, no '/', '\\' or '..'")
+    elif name in names:
+        report.errors.append(f"{where}.name: duplicate file {name!r}")
+    else:
+        names.add(name)
+    if not _is_public_https_url(entry.get("url")):
+        report.errors.append(f"{where}.url: must be an https:// address on the public internet")
+    size = entry.get("size")
+    if size is not None and not (isinstance(size, int) and not isinstance(size, bool) and size >= 0):
+        report.errors.append(f"{where}.size: must be a non-negative integer")
+    md5 = entry.get("md5")
+    if md5 is not None and not (isinstance(md5, str) and MD5.fullmatch(md5)):
+        report.errors.append(f"{where}.md5: must be 32 hexadecimal characters")
+
+
 def _validate_collection(item: Any, where: str, report: Report) -> None:
     if not isinstance(item, dict):
         report.errors.append(f"{where}: must be an object")
@@ -85,8 +163,11 @@ def _validate_collection(item: Any, where: str, report: Report) -> None:
     if not isinstance(kind, str) or not kind:
         report.errors.append(f"{where}.source.type: required string")
         return
+    if kind in WEB_SOURCES:
+        _validate_web_source(kind, source, f"{where}.source", report)
+        return
     if kind != SOURCE_ARCHIVE_ITEM:
-        report.warnings.append(f"{where}.source.type: {kind!r} is unknown to spec 1; apps will skip this collection")
+        report.warnings.append(f"{where}.source.type: {kind!r} is unknown to this validator; apps that do not know it skip this collection")
         return
     identifier = source.get("id")
     if not (isinstance(identifier, str) and ARCHIVE_ID.fullmatch(identifier)):

@@ -29,5 +29,5 @@ jobs:
           else
             gh release create "${GITHUB_REF_NAME}" dist/rroms.addon.json \
               --title "${GITHUB_REF_NAME}" \
-              --notes "Reference catalog built from the r/ROMs megathread. Add it in Archive Fetcher under Addons."
+              --notes "Reference catalog built from the r/ROMs megathread. Add it in Cartshelf under Addons."
           fi
