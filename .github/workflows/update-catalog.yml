@@ -1,0 +1,42 @@
+name: Update reference catalog
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # every Monday, 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-catalog
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the catalog (drops collections the Internet Archive removed)
+        run: python generators/rroms/generate.py --verify
+      - name: Validate
+        run: |
+          python tools/validate_addon.py dist/rroms.addon.json
+          python -m unittest discover -s tests
+      - name: Commit when something changed
+        run: |
+          # The version field is the build date, so compare the catalog without it.
+          if git diff --quiet -I'"version"' -- dist/rroms.addon.json; then
+            echo "No change in the catalog."
+            git checkout -- dist/rroms.addon.json
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/rroms.addon.json
+          git commit -m "chore: refresh reference catalog"
+          git pull --rebase
+          git push

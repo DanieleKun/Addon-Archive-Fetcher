@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "description": "Canonical categories and consoles. Addons that reuse these ids are merged by the app into one tree.",
+  "categories": [
+    {
+      "id": "nintendo",
+      "name": "Nintendo",
+      "consoles": [
+        {"id": "nintendo-fds", "name": "Nintendo - Family Computer Disk System"},
+        {"id": "nintendo-nes", "name": "Nintendo - Nintendo Entertainment System"},
+        {"id": "nintendo-snes", "name": "Nintendo - Super Nintendo Entertainment System"},
+        {"id": "nintendo-64", "name": "Nintendo - Nintendo 64"},
+        {"id": "nintendo-64dd", "name": "Nintendo - Nintendo 64DD"},
+        {"id": "nintendo-gb", "name": "Nintendo - Game Boy"},
+        {"id": "nintendo-gbc", "name": "Nintendo - Game Boy Color"},
+        {"id": "nintendo-gba", "name": "Nintendo - Game Boy Advance"},
+        {"id": "nintendo-virtual-boy", "name": "Nintendo - Virtual Boy"},
+        {"id": "nintendo-pokemon-mini", "name": "Nintendo - Pokémon Mini"},
+        {"id": "nintendo-ds", "name": "Nintendo - Nintendo DS"},
+        {"id": "nintendo-dsi", "name": "Nintendo - Nintendo DSi"},
+        {"id": "nintendo-3ds", "name": "Nintendo - Nintendo 3DS"},
+        {"id": "nintendo-gamecube", "name": "Nintendo - GameCube"},
+        {"id": "nintendo-wii", "name": "Nintendo - Wii"},
+        {"id": "nintendo-wii-u", "name": "Nintendo - Wii U"}
+      ]
+    },
+    {
+      "id": "sony",
+      "name": "Sony",
+      "consoles": [
+        {"id": "sony-ps1", "name": "Sony - PlayStation"},
+        {"id": "sony-ps2", "name": "Sony - PlayStation 2"},
+        {"id": "sony-psp", "name": "Sony - PlayStation Portable"},
+        {"id": "sony-ps3", "name": "Sony - PlayStation 3"},
+        {"id": "sony-vita", "name": "Sony - PlayStation Vita"}
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "consoles": [
+        {"id": "microsoft-xbox", "name": "Microsoft - Xbox"},
+        {"id": "microsoft-xbox360", "name": "Microsoft - Xbox 360"}
+      ]
+    },
+    {
+      "id": "sega",
+      "name": "Sega",
+      "consoles": [
+        {"id": "sega-master-system", "name": "Sega - Master System / Mark III"},
+        {"id": "sega-mega-drive", "name": "Sega - Mega Drive / Genesis"},
+        {"id": "sega-32x", "name": "Sega - 32X"},
+        {"id": "sega-game-gear", "name": "Sega - Game Gear"},
+        {"id": "sega-cd", "name": "Sega - Mega CD / Sega CD"},
+        {"id": "sega-saturn", "name": "Sega - Saturn"},
+        {"id": "sega-dreamcast", "name": "Sega - Dreamcast"}
+      ]
+    },
+    {
+      "id": "atari",
+      "name": "Atari",
+      "consoles": [
+        {"id": "atari-2600", "name": "Atari - 2600"},
+        {"id": "atari-5200", "name": "Atari - 5200"},
+        {"id": "atari-7800", "name": "Atari - 7800"},
+        {"id": "atari-jaguar", "name": "Atari - Jaguar"},
+        {"id": "atari-jaguar-cd", "name": "Atari - Jaguar CD"}
+      ]
+    },
+    {
+      "id": "nec",
+      "name": "NEC",
+      "consoles": [
+        {"id": "nec-pc-engine", "name": "NEC - PC Engine / TurboGrafx-16"},
+        {"id": "nec-pc-engine-cd", "name": "NEC - PC Engine CD / TurboGrafx CD"},
+        {"id": "nec-pc-fx", "name": "NEC - PC-FX"},
+        {"id": "nec-pc-98", "name": "NEC - PC-98"}
+      ]
+    },
+    {
+      "id": "snk",
+      "name": "SNK",
+      "consoles": [
+        {"id": "snk-neo-geo-cd", "name": "SNK - Neo Geo CD"}
+      ]
+    },
+    {
+      "id": "other-consoles",
+      "name": "Other consoles",
+      "consoles": [
+        {"id": "panasonic-3do", "name": "Panasonic - 3DO Interactive Multiplayer"},
+        {"id": "philips-cdi", "name": "Philips - CD-i"},
+        {"id": "bandai-pippin", "name": "Bandai - Pippin"},
+        {"id": "fujitsu-fm-towns", "name": "Fujitsu - FM Towns"}
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "consoles": [
+        {"id": "arcade-mame", "name": "Arcade - MAME"},
+        {"id": "arcade-fbneo", "name": "Arcade - FinalBurn Neo"},
+        {"id": "arcade-konami-firebeat", "name": "Arcade - Konami - FireBeat"},
+        {"id": "arcade-konami-m2", "name": "Arcade - Konami - M2"},
+        {"id": "arcade-konami-system-573", "name": "Arcade - Konami - System 573"},
+        {"id": "arcade-konami-system-gv", "name": "Arcade - Konami - System GV"},
+        {"id": "arcade-konami-e-amusement", "name": "Arcade - Konami - e-Amusement"},
+        {"id": "arcade-namco-system-246", "name": "Arcade - Namco - System 246"},
+        {"id": "arcade-triforce", "name": "Arcade - Namco / Sega / Nintendo - Triforce"},
+        {"id": "arcade-sega-chihiro", "name": "Arcade - Sega - Chihiro"},
+        {"id": "arcade-sega-lindbergh", "name": "Arcade - Sega - Lindbergh"},
+        {"id": "arcade-sega-naomi", "name": "Arcade - Sega - Naomi"},
+        {"id": "arcade-sega-naomi-2", "name": "Arcade - Sega - Naomi 2"},
+        {"id": "arcade-sega-ringedge", "name": "Arcade - Sega - RingEdge"},
+        {"id": "arcade-sega-ringedge-2", "name": "Arcade - Sega - RingEdge 2"}
+      ]
+    },
+    {
+      "id": "computers",
+      "name": "Computers",
+      "consoles": [
+        {"id": "pc-dos", "name": "PC - MS-DOS"},
+        {"id": "pc-windows", "name": "PC - Windows 3.x"},
+        {"id": "pc-redump", "name": "IBM - PC Compatible (Redump)"},
+        {"id": "pc-doom", "name": "PC - DOOM WADs"},
+        {"id": "apple-macintosh", "name": "Apple - Macintosh"}
+      ]
+    }
+  ]
+}

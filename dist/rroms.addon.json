@@ -1,0 +1,2918 @@
+{
+ "spec": 1,
+ "id": "rroms-megathread",
+ "name": "r/ROMs Megathread",
+ "version": "2026.11.22",
+ "description": "Internet Archive collections listed by the r/ROMs megathread, grouped by manufacturer and console. Contains only identifiers of public Internet Archive items; no files.",
+ "homepage": "https://r-roms.github.io/",
+ "categories": [
+  {
+   "id": "nintendo",
+   "name": "Nintendo",
+   "consoles": [
+    {
+     "id": "nintendo-nes",
+     "name": "Nintendo - Nintendo Entertainment System",
+     "collections": [
+      {
+       "title": "Nintendo - NES Collection",
+       "source": {
+        "type": "archive.org-item",
+        "id": "NES_Test_Collection_3",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-snes",
+     "name": "Nintendo - Super Nintendo Entertainment System",
+     "collections": [
+      {
+       "title": "Nintendo - Super Nintendo Entertainment System",
+       "source": {
+        "type": "archive.org-item",
+        "id": "No-Intro_SNES_Collection",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-64",
+     "name": "Nintendo - Nintendo 64",
+     "collections": [
+      {
+       "title": "Nintendo - N64 Collection",
+       "source": {
+        "type": "archive.org-item",
+        "id": "No-Intro_N64_Collection"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-gb",
+     "name": "Nintendo - Game Boy",
+     "collections": [
+      {
+       "title": "Nintendo - Game Boy",
+       "source": {
+        "type": "archive.org-item",
+        "id": "No-Intro_GameBoy_Collection",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-gbc",
+     "name": "Nintendo - Game Boy Color",
+     "collections": [
+      {
+       "title": "Nintendo - Game Boy Color",
+       "source": {
+        "type": "archive.org-item",
+        "id": "No-Intro_GameBoy_Color_Collection",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-gba",
+     "name": "Nintendo - Game Boy Advance",
+     "collections": [
+      {
+       "title": "Nintendo - Game Boy Advance Collection",
+       "source": {
+        "type": "archive.org-item",
+        "id": "No-Intro_GameBoy_Advance_Collection",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-ds",
+     "name": "Nintendo - Nintendo DS",
+     "collections": [
+      {
+       "title": "Nintendo DS Anti-Piracy Fixed ROMs",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nds_apfix",
+        "path": "apfix"
+       }
+      },
+      {
+       "title": "DS No-Intro 2024",
+       "source": {
+        "type": "archive.org-item",
+        "id": "DS-No-Intro-2024-Myrient-Zipped",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-dsi",
+     "name": "Nintendo - Nintendo DSi",
+     "collections": [
+      {
+       "title": "DSi No-Intro 2024",
+       "source": {
+        "type": "archive.org-item",
+        "id": "DSi-No-Intro-2024-Myrient-Zipped-2",
+        "expand": "zip"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-3ds",
+     "name": "Nintendo - Nintendo 3DS",
+     "collections": [
+      {
+       "title": "3DS-Main - Encrypted (Part 1) (#-R)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "3ds-main-encrypted"
+       }
+      },
+      {
+       "title": "3DS-Main - Encrypted (Part 2) (S-Z)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "3ds-main-encrypted-p2"
+       }
+      },
+      {
+       "title": "3DS No-Intro 2024 Individual Games Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "3DS-Redump-2024-Individual-Games-Part1"
+       }
+      },
+      {
+       "title": "3DS No-Intro 2024 Individual Games Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "3DS-Redump-2024-Individual-Games-Part2"
+       }
+      },
+      {
+       "title": "N3DS No-Intro Collection 2024",
+       "source": {
+        "type": "archive.org-item",
+        "id": "xenoblade-chronicles-3-d-europe-en-fr-de-es-it"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-gamecube",
+     "name": "Nintendo - GameCube",
+     "collections": [
+      {
+       "title": "Redump - Nintendo - GameCube (Japan)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "NCubeJ"
+       }
+      },
+      {
+       "title": "Redump - Nintendo - GameCube (Asia)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "AsiaGamecubeCollectionByGhostware"
+       }
+      },
+      {
+       "title": "GameCube Redump 2024 Individual Games (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "GameCube-Redump-2024-Individual-Games-Part1"
+       }
+      },
+      {
+       "title": "GameCube Redump 2024 Individual Games (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "GameCube-Redump-2024-Individual-Games-Part2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-wii",
+     "name": "Nintendo - Wii",
+     "collections": [
+      {
+       "title": "NKit Fully Loaded",
+       "source": {
+        "type": "archive.org-item",
+        "id": "NKitFullyLoaded2020429",
+        "path": "NKit 2020.4.29"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part1"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part2"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part3"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 4)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part4"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 5)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part5"
+       }
+      },
+      {
+       "title": "Wii Redump 2024 Individual Games (Part 6)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Wii-Redump-2024-Individual-Games-Part6"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nintendo-wii-u",
+     "name": "Nintendo - Wii U",
+     "collections": [
+      {
+       "title": "Wii U: Retail NUS [USA]",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-retail-nus-usa"
+       }
+      },
+      {
+       "title": "Wii U: TurboGrafx-16 NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-turbografx16-nus"
+       }
+      },
+      {
+       "title": "Wii U: Wii NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-wii-nus"
+       }
+      },
+      {
+       "title": "Wii U: Nintendo 64 NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-nintendo-64-nus"
+       }
+      },
+      {
+       "title": "Wii U: NES & Famicom NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-nes-fc-nus"
+       }
+      },
+      {
+       "title": "Wii U: Super Nintendo NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-super-nintendo-snes-nus"
+       }
+      },
+      {
+       "title": "Wii U: Nintendo DS NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-nintendo-ds-nds-nus"
+       }
+      },
+      {
+       "title": "Wii U: Gameboy Advance NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-gameboy-advance-nus"
+       }
+      },
+      {
+       "title": "Wii U: Retail Game Disc NUS",
+       "source": {
+        "type": "archive.org-item",
+        "id": "wii-u-retail-game-disc-nus-usa"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sony",
+   "name": "Sony",
+   "consoles": [
+    {
+     "id": "sony-ps1",
+     "name": "Sony - PlayStation",
+     "collections": [
+      {
+       "title": "Sony PlayStation (Part 1: #-D) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_part1"
+       }
+      },
+      {
+       "title": "Sony PlayStation (Part 2: E-I) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_part2"
+       }
+      },
+      {
+       "title": "Sony PlayStation (Part 3: J-N) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_part3"
+       }
+      },
+      {
+       "title": "Sony PlayStation (Part 4: O-S) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_part4"
+       }
+      },
+      {
+       "title": "Sony PlayStation (Part 5: T-Z) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_part5"
+       }
+      },
+      {
+       "title": "PS1 Redump .chd USA",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_psx",
+        "path": "CHD-PSX-USA"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PS1 Redump .chd EUR",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_psx_eur",
+        "path": "CHD-PSX-EUR"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PS1 Redump .chd JPN Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_psx_jap",
+        "path": "CHD-PSX-JAP"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PS1 Redump .chd JPN Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_psx_jap_p2",
+        "path": "CHD-PSX-JAP"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PS1 Redump .chd Misc",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_psx_misc",
+        "path": "CHD-PSX-Misc"
+       },
+       "format": "chd"
+      }
+     ]
+    },
+    {
+     "id": "sony-ps2",
+     "name": "Sony - PlayStation 2",
+     "collections": [
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 1 (# - B)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part1"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 2 (B - C)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part2"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 3 (C - D)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part3"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 4 (D - F)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part4"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 5 (F - G)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part5"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 6 (G - H)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part6"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 7 (H - K)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part7"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 8 (K - M)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part8"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 9 (M - N)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part9"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 10 (N - O)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part10"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 11 (O - P)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part11"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 12 (P - S)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part12"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 13 (S - S)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part13"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 14 (S - S, Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part14"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 15 (S - T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part15"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 16 (T - W)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part16"
+       }
+      },
+      {
+       "title": "PS2 Redump 2024 Individual Games Part 17 (W - Z)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS2-Redump-2024-Individual-Games-Part17"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sony-psp",
+     "name": "Sony - PlayStation Portable",
+     "collections": [
+      {
+       "title": "PSP Redump .iso (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_portable_part1"
+       },
+       "format": "iso"
+      },
+      {
+       "title": "PSP Redump .iso (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_portable_part2"
+       },
+       "format": "iso"
+      },
+      {
+       "title": "PSP Redump .iso (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_portable_part3"
+       },
+       "format": "iso"
+      },
+      {
+       "title": "PSP Redump .iso (Part 4)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony_playstation_portable_part4"
+       },
+       "format": "iso"
+      },
+      {
+       "title": "PSP Redump .chd (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "psp-chd-zstd-redump-part1",
+        "path": "psp-chd-zstd"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PSP Redump .chd (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "psp-chd-zstd-redump-part2",
+        "path": "psp-chd-zstd"
+       },
+       "format": "chd"
+      },
+      {
+       "title": "PSP DLC (Alvro Files)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PSP_DLC"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sony-ps3",
+     "name": "Sony - PlayStation 3",
+     "collections": [
+      {
+       "title": "PS3 No-Intro USA Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_1"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_2"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 3",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_3"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 4",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_4"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 5",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA__5"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 6",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_6"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 7",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_7"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 8",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_8"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 9",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_9"
+       }
+      },
+      {
+       "title": "PS3 No-Intro USA Part 10",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_USA_10"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_1"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_2"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 3",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_3"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 4",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_4"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 5",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_5"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 6",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_6"
+       }
+      },
+      {
+       "title": "PS3 No-Intro EUR Part 7",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_EUR_7"
+       }
+      },
+      {
+       "title": "PS3 No-Intro JAP Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_JAP_1"
+       }
+      },
+      {
+       "title": "PS3 No-Intro JAP Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_JAP_2"
+       }
+      },
+      {
+       "title": "PS3 No-Intro JAP Part 3",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_JAP_3"
+       }
+      },
+      {
+       "title": "PS3 No-Intro JAP Part 4",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_NOINTRO_JAP_4"
+       }
+      },
+      {
+       "title": "PS3 PSN Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_PSN_1"
+       }
+      },
+      {
+       "title": "PS3 PSN Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_PSN_2"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 1) (#-A)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part1"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 2) (A-A)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part2"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 3) (A-B)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part3"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 4) (B-C)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part4"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 5) (C-C)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part5"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 6) (C-D)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part6"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 7) (D-D)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part7"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 8) (D-D Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part8"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 9) (D-E)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part9"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 10) (E-F)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part10"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 11) (F-F)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part11"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 12) (F-G)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part12"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 13) (G-G)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part13"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 14) (G-I)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part14"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 15) (I-K)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part15"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 16) (K-L)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part16"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 17) (L-M)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part17"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 18) (M-M)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part18"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 19) (M-M Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part19"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 20) (M-N)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part20"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 21) (N-O)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part21"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 22) (O-O)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part22"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 23) (O-P)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part23"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 24) (P-R)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part24"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 25) (R-R)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part25"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 26) (R-S)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part26"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 27) (S-S)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part27"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 28) (S-S Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part28"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 29) (S-T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part29"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 30) (T-T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part30"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 31) (T-U)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part31"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 32) (U-V)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part32"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 33) (V-W)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part33"
+       }
+      },
+      {
+       "title": "Sony PlayStation 3 - Redump 2024 (Part 34) (W-Z)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3-Redump-2024-Individual-Games-Part34"
+       }
+      },
+      {
+       "title": "PS3 Games (# - C)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_1"
+       }
+      },
+      {
+       "title": "PS3 Games (C - D)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_2"
+       }
+      },
+      {
+       "title": "PS3 Games (D - G)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_3"
+       }
+      },
+      {
+       "title": "PS3 Games (D - G) (Other)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_3_OTHER"
+       }
+      },
+      {
+       "title": "PS3 Games (G - J)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_4"
+       }
+      },
+      {
+       "title": "PS3 Games (J - M)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART__5"
+       }
+      },
+      {
+       "title": "PS3 Games (M - N)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_6"
+       }
+      },
+      {
+       "title": "PS3 Games (R - S)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_8"
+       }
+      },
+      {
+       "title": "PS3 Games (S - T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_9"
+       }
+      },
+      {
+       "title": "PS3 Games (T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_10"
+       }
+      },
+      {
+       "title": "PS3 Games (T - Z)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PS3_ALVRO_PART_11"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sony-vita",
+     "name": "Sony - PlayStation Vita",
+     "collections": [
+      {
+       "title": "Sony - PlayStation Vita Games (USA)(NoNpDRM)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony-playstation-vita-usa-full-set-nonpdrm-format"
+       }
+      },
+      {
+       "title": "Sony - PlayStation Vita DLC & Updates (USA)(NoNpDRM)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sony-playstation-vita-usa-full-set-nonpdrm-format-dlc-updates"
+       }
+      },
+      {
+       "title": "PSVITA VPK",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PSVITA_VPK"
+       }
+      },
+      {
+       "title": "PSVITA MAIDUMP",
+       "source": {
+        "type": "archive.org-item",
+        "id": "PSVITA_MAIDUMP"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "microsoft",
+   "name": "Microsoft",
+   "consoles": [
+    {
+     "id": "microsoft-xbox",
+     "name": "Microsoft - Xbox",
+     "collections": [
+      {
+       "title": "Microsoft Xbox - # - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_numberssymbols"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - A - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_a"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - B - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_b"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - C (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_c_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - C (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_c_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - D (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_d_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - D (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_d_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - E - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_e"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - F - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_f"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - G - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_g"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - H - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_h"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - I - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_i"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - J - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_j"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - K - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_k"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - L - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_l"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - M (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_m_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - M (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_m_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - N (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_n_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - N (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_n_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - O (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_o_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - O (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_o_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - P - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_p"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - Q - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_q"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - R - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_r"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - S (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_s_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - S (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_s_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - T (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_t_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - T (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_t_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - U - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_u"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - V - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_v"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - W - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_w"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - X - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_x"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - Y - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_y"
+       }
+      },
+      {
+       "title": "Microsoft Xbox - Z - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox_z"
+       }
+      }
+     ]
+    },
+    {
+     "id": "microsoft-xbox360",
+     "name": "Microsoft - Xbox 360",
+     "collections": [
+      {
+       "title": "Microsoft Xbox 360 - # - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_numberssymbols"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - A (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_a_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - A (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_a_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - B (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_b_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - B (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_b_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - C (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_c_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - C (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_c_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - D (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_d_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - D (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_d_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - D (Part 3) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_d_part3"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - E - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_e"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - F (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_f_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - F (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_f_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - G - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_g"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - H - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_h"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - I - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_i"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - J - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_j"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - K - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_k"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - L - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_l"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - M (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_m_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - M (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_m_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - N (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_n_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - N (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_n_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - O - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_o"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - P - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_p"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Q - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_q"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - R - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_r"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - S (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_s_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - S (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_s_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - T (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_t_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - T (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_t_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - U - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_u"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - V - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_v"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - W - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_w"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - X (Part 1) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_x_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - X (Part 2) - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_x_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Y - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_y"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Z - Redump.org",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_z"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Title Updates - No-Intro",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_title-updates"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part1"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part2"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part3"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 4)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part4"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 5)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part5"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 6)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part6"
+       }
+      },
+      {
+       "title": "Microsoft Xbox 360 - Digital (Part 7)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "microsoft_xbox360_digital_part7"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (# - D) (Other)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_1_OTHER"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (# - D)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_1"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (D - H)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_2"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (H - M)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_3"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (M - P)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_4"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (P - T)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_5"
+       }
+      },
+      {
+       "title": "Xbox 360 Games (T - Z)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_6"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_1"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_2"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 3",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_3"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 4",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_4"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 5",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_5"
+       }
+      },
+      {
+       "title": "Xbox 360 DLC Part 6",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_DLC_6"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLIG Part 1",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLIG_1"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLIG Part 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLIG_2"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLIG Part 3",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLIG_3"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLIG Part 4",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLIG_4"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLA",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLA"
+       }
+      },
+      {
+       "title": "Xbox 360 XBLA DLC",
+       "source": {
+        "type": "archive.org-item",
+        "id": "XBOX_360_XBLA_DLC"
+       }
+      },
+      {
+       "title": "Rock Band DLC Complete Collection Xbox 360 by Americo",
+       "source": {
+        "type": "archive.org-item",
+        "id": "rock-band-dlc-complete-collection-xbox-360-by-americo"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sega",
+   "name": "Sega",
+   "consoles": [
+    {
+     "id": "sega-master-system",
+     "name": "Sega - Master System / Mark III",
+     "collections": [
+      {
+       "title": "Sega - Master System - Mark III (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Sega - Master System - Mark III.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Sega - Master System - Mark III (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.ms-mkiii"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-mega-drive",
+     "name": "Sega - Mega Drive / Genesis",
+     "collections": [
+      {
+       "title": "Sega - Mega Drive - Genesis (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Sega - Mega Drive - Genesis.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Sega - Mega Drive - Genesis (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.md"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-32x",
+     "name": "Sega - 32X",
+     "collections": [
+      {
+       "title": "Sega - 32X (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Sega - 32X.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Sega - 32X (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.32x"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-game-gear",
+     "name": "Sega - Game Gear",
+     "collections": [
+      {
+       "title": "Sega - Game Gear (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Sega - Game Gear.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Sega - Game Gear (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.gg"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-cd",
+     "name": "Sega - Mega CD / Sega CD",
+     "collections": [
+      {
+       "title": "Sega - Mega CD & Sega CD (BIN/CUE)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_mega-cd_sega-cd"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-saturn",
+     "name": "Sega - Saturn",
+     "collections": [
+      {
+       "title": "Sega - Saturn (BIN/CUE)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_saturn"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) USA",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/USA"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) EUR",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/Europe"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) JPN",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/Japan"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) Other",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/Other-Regions"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) Translations",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/Translations"
+       }
+      },
+      {
+       "title": "Sega - Saturn (CHD) Improvements",
+       "source": {
+        "type": "archive.org-item",
+        "id": "chd_saturn",
+        "path": "CHD-Saturn/Improvements"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sega-dreamcast",
+     "name": "Sega - Dreamcast",
+     "collections": [
+      {
+       "title": "Sega - Dreamcast (BIN/CUE)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_dreamcast"
+       }
+      },
+      {
+       "title": "Sega - Dreamcast (CHD)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "dc-chd-zstd-redump",
+        "path": "dc-chd-zstd"
+       }
+      },
+      {
+       "title": "TOSEC Dreamcast USA GDI",
+       "source": {
+        "type": "archive.org-item",
+        "id": "tosecdcus20190822"
+       }
+      },
+      {
+       "title": "TOSEC Dreamcast EUR GDI",
+       "source": {
+        "type": "archive.org-item",
+        "id": "18wheeleramericanprotruckerv1.7002001segapalm4"
+       }
+      },
+      {
+       "title": "TOSEC Dreamcast JAP GDI",
+       "source": {
+        "type": "archive.org-item",
+        "id": "interludev1.0032003necinterchanneljp"
+       }
+      },
+      {
+       "title": "Dreamcast Collection By Ghostware Multi-region",
+       "source": {
+        "type": "archive.org-item",
+        "id": "DreamcastCollectionByGhostwareMulti-region"
+       }
+      },
+      {
+       "title": "Almost Complete Dreamcast GDI",
+       "source": {
+        "type": "archive.org-item",
+        "id": "almstcmpltdrmcst"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "atari",
+   "name": "Atari",
+   "consoles": [
+    {
+     "id": "atari-2600",
+     "name": "Atari - 2600",
+     "collections": [
+      {
+       "title": "Atari - 2600 (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Atari - 2600.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Atari - 2600 (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.atari-2600"
+       }
+      }
+     ]
+    },
+    {
+     "id": "atari-5200",
+     "name": "Atari - 5200",
+     "collections": [
+      {
+       "title": "Atari - 5200 (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/Atari - 5200.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "Atari - 5200 (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.atari-5200"
+       }
+      }
+     ]
+    },
+    {
+     "id": "atari-7800",
+     "name": "Atari - 7800",
+     "collections": [
+      {
+       "title": "Atari - 7800 (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.atari-7800"
+       }
+      }
+     ]
+    },
+    {
+     "id": "atari-jaguar-cd",
+     "name": "Atari - Jaguar CD",
+     "collections": [
+      {
+       "title": "Atari - Jaguar CD Interactive Multimedia System",
+       "source": {
+        "type": "archive.org-item",
+        "id": "atari_jaguar-cd"
+       }
+      },
+      {
+       "title": "Atari Jaguar",
+       "source": {
+        "type": "archive.org-item",
+        "id": "jagcd-chd-zstd",
+        "path": "jagcd-chd-zstd"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nec",
+   "name": "NEC",
+   "consoles": [
+    {
+     "id": "nec-pc-engine",
+     "name": "NEC - PC Engine / TurboGrafx-16",
+     "collections": [
+      {
+       "title": "NEC - PC Engine - TurboGrafx 16 (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ni-roms",
+        "path": "roms/NEC - PC Engine - TurboGrafx-16.zip",
+        "expand": "zip"
+       }
+      },
+      {
+       "title": "NEC - PC Engine - TurboGrafx 16 (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nointro.tg-16"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nec-pc-engine-cd",
+     "name": "NEC - PC Engine CD / TurboGrafx CD",
+     "collections": [
+      {
+       "title": "NEC - PC Engine CD & TurboGrafx CD",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nec_pc-engine-cd_turbografx-cd"
+       }
+      },
+      {
+       "title": "PC Engine CD - TurboGrafx CD",
+       "source": {
+        "type": "archive.org-item",
+        "id": "pcecd-chd-zstd-redump"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nec-pc-fx",
+     "name": "NEC - PC-FX",
+     "collections": [
+      {
+       "title": "NEC - PC-FX & PC-FXGA",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nec_pc-fxpc_fxga"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nec-pc-98",
+     "name": "NEC - PC-98",
+     "collections": [
+      {
+       "title": "NEC - PC-98 series",
+       "source": {
+        "type": "archive.org-item",
+        "id": "nec_pc-98_series"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "snk",
+   "name": "SNK",
+   "consoles": [
+    {
+     "id": "snk-neo-geo-cd",
+     "name": "SNK - Neo Geo CD",
+     "collections": [
+      {
+       "title": "SNK - Neo Geo CD",
+       "source": {
+        "type": "archive.org-item",
+        "id": "snk_neo_geo"
+       }
+      },
+      {
+       "title": "SNK - NeoGeo CD",
+       "source": {
+        "type": "archive.org-item",
+        "id": "ngcd-chd-zstd-redump",
+        "path": "ngcd-chd-zstd"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "other-consoles",
+   "name": "Other consoles",
+   "consoles": [
+    {
+     "id": "panasonic-3do",
+     "name": "Panasonic - 3DO Interactive Multiplayer",
+     "collections": [
+      {
+       "title": "Panasonic - 3DO Interactive Multiplayer",
+       "source": {
+        "type": "archive.org-item",
+        "id": "panasonic_3do_interactive_multiplayer"
+       }
+      },
+      {
+       "title": "Panasonic - 3DO Interactive Multiplayer",
+       "source": {
+        "type": "archive.org-item",
+        "id": "3do-chd-zstd-redump",
+        "path": "3do-chd-zstd"
+       }
+      }
+     ]
+    },
+    {
+     "id": "philips-cdi",
+     "name": "Philips - CD-i",
+     "collections": [
+      {
+       "title": "Philips - CD-i",
+       "source": {
+        "type": "archive.org-item",
+        "id": "philips_cd-i"
+       }
+      }
+     ]
+    },
+    {
+     "id": "bandai-pippin",
+     "name": "Bandai - Pippin",
+     "collections": [
+      {
+       "title": "Bandai - Pippin",
+       "source": {
+        "type": "archive.org-item",
+        "id": "bandai_pippin"
+       }
+      }
+     ]
+    },
+    {
+     "id": "fujitsu-fm-towns",
+     "name": "Fujitsu - FM Towns",
+     "collections": [
+      {
+       "title": "Fujitsu - FM-Towns",
+       "source": {
+        "type": "archive.org-item",
+        "id": "fujitsu_fm_towns_series"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "arcade",
+   "name": "Arcade",
+   "consoles": [
+    {
+     "id": "arcade-mame",
+     "name": "Arcade - MAME",
+     "collections": [
+      {
+       "title": "MAME 0.266 Software List ROMs Merged",
+       "source": {
+        "type": "archive.org-item",
+        "id": "mame-sl",
+        "path": "mame-sl"
+       }
+      },
+      {
+       "title": "MAME 0.266 CHDs Merged",
+       "source": {
+        "type": "archive.org-item",
+        "id": "MAME_0.225_CHDs_merged"
+       }
+      },
+      {
+       "title": "MAME 0.265 ROMs Merged",
+       "source": {
+        "type": "archive.org-item",
+        "id": "mame-merged",
+        "path": "mame-merged"
+       }
+      },
+      {
+       "title": "MAME 0.265 BIOS Sets",
+       "source": {
+        "type": "archive.org-item",
+        "id": "mame-merged",
+        "path": "BIOS"
+       }
+      },
+      {
+       "title": "HBMAME 0.244 ROMs Merged",
+       "source": {
+        "type": "archive.org-item",
+        "id": "hbmame_0244_roms"
+       }
+      },
+      {
+       "title": "MAME 0.258 ROMs + CHDs + EXTRAs",
+       "source": {
+        "type": "archive.org-item",
+        "id": "mame-chds-roms-extras-complete"
+       }
+      },
+      {
+       "title": "MAME Support Files",
+       "source": {
+        "type": "archive.org-item",
+        "id": "mame-support",
+        "path": "Support"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-fbneo",
+     "name": "Arcade - FinalBurn Neo",
+     "collections": [
+      {
+       "title": "FinalBurn Neo Nightly ROMs + Support (Updated Monthly)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "2020_01_06_fbn"
+       }
+      },
+      {
+       "title": "FinalBurn Neo 1.0.0.2 ROMs + Support",
+       "source": {
+        "type": "archive.org-item",
+        "id": "fbneo"
+       }
+      },
+      {
+       "title": "FinalBurn Neo Arcade ROM Set (Full Non-Merged)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "fbnarcade-fullnonmerged",
+        "path": "arcade"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-konami-firebeat",
+     "name": "Arcade - Konami - FireBeat",
+     "collections": [
+      {
+       "title": "Arcade - Konami - FireBeat",
+       "source": {
+        "type": "archive.org-item",
+        "id": "konami_firebeat"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-konami-m2",
+     "name": "Arcade - Konami - M2",
+     "collections": [
+      {
+       "title": "Arcade - Konami - M2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "konami_m2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-konami-system-573",
+     "name": "Arcade - Konami - System 573",
+     "collections": [
+      {
+       "title": "Arcade - Konami - System 573",
+       "source": {
+        "type": "archive.org-item",
+        "id": "konami_system_573"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-konami-system-gv",
+     "name": "Arcade - Konami - System GV",
+     "collections": [
+      {
+       "title": "Arcade - Konami - System GV",
+       "source": {
+        "type": "archive.org-item",
+        "id": "konami_system_gv"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-konami-e-amusement",
+     "name": "Arcade - Konami - e-Amusement",
+     "collections": [
+      {
+       "title": "Arcade - Konami - e-Amusement",
+       "source": {
+        "type": "archive.org-item",
+        "id": "konami_e-amusement"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-namco-system-246",
+     "name": "Arcade - Namco - System 246",
+     "collections": [
+      {
+       "title": "Arcade - Namco - System 246",
+       "source": {
+        "type": "archive.org-item",
+        "id": "namco_system_246"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-triforce",
+     "name": "Arcade - Namco / Sega / Nintendo - Triforce",
+     "collections": [
+      {
+       "title": "Arcade - Namco - Sega - Nintendo - Triforce",
+       "source": {
+        "type": "archive.org-item",
+        "id": "namco_sega_nintendo_triforce"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-chihiro",
+     "name": "Arcade - Sega - Chihiro",
+     "collections": [
+      {
+       "title": "Arcade - Sega - Chihiro",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_chihiro"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-lindbergh",
+     "name": "Arcade - Sega - Lindbergh",
+     "collections": [
+      {
+       "title": "Arcade - Sega - Lindbergh",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_lindbergh"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-naomi",
+     "name": "Arcade - Sega - Naomi",
+     "collections": [
+      {
+       "title": "Arcade - Sega - Naomi",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_naomi"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-naomi-2",
+     "name": "Arcade - Sega - Naomi 2",
+     "collections": [
+      {
+       "title": "Arcade - Sega - Naomi 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_naomi_2"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-ringedge",
+     "name": "Arcade - Sega - RingEdge",
+     "collections": [
+      {
+       "title": "Arcade - Sega - RingEdge",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_ringedge"
+       }
+      }
+     ]
+    },
+    {
+     "id": "arcade-sega-ringedge-2",
+     "name": "Arcade - Sega - RingEdge 2",
+     "collections": [
+      {
+       "title": "Arcade - Sega - RingEdge 2",
+       "source": {
+        "type": "archive.org-item",
+        "id": "sega_ringedge_2"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "computers",
+   "name": "Computers",
+   "consoles": [
+    {
+     "id": "pc-dos",
+     "name": "PC - MS-DOS",
+     "collections": [
+      {
+       "title": "Total DOS Collection Release 16 March 2019",
+       "source": {
+        "type": "archive.org-item",
+        "id": "Total_DOS_Collection_Release_16_March_2019"
+       }
+      }
+     ]
+    },
+    {
+     "id": "pc-redump",
+     "name": "IBM - PC Compatible (Redump)",
+     "collections": [
+      {
+       "title": "Redump PC-Compatible Assembly: 0-9",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_0"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: A",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_A"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: B (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_B"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: B (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_B-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: C (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_C"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: C (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_C-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: C (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_C-3"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: C (Part 4)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_C-4"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: D (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_D"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: D (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_D-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: E",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_E"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: F",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_F"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: G (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_G"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: G (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_G-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: G (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_G-3"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: H",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_H"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: I",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_I"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: J",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_J"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: K",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_K"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: L",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_L"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: M (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_M"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: M (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_M-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: N",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_N"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: O",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_O"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: P (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_P"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: P (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_P-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: P (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_P-3"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: Q",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_Q"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: R",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_R"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: S (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_S"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: S (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_S-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: S (Part 3)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_S-3"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: T (Part 1)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_T"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: T (Part 2)",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_T-2"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: U",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_U"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: V",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_V"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: W",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_W"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: X",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_X"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: Y",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_Y"
+       }
+      },
+      {
+       "title": "Redump PC-Compatible Assembly: Z",
+       "source": {
+        "type": "archive.org-item",
+        "id": "redump_pc_Z"
+       }
+      }
+     ]
+    },
+    {
+     "id": "pc-doom",
+     "name": "PC - DOOM WADs",
+     "collections": [
+      {
+       "title": "DOOM WADs",
+       "source": {
+        "type": "archive.org-item",
+        "id": "2020_03_22_DOOM",
+        "path": "DOOM WADs"
+       }
+      }
+     ]
+    },
+    {
+     "id": "apple-macintosh",
+     "name": "Apple - Macintosh",
+     "collections": [
+      {
+       "title": "Apple - Macintosh",
+       "source": {
+        "type": "archive.org-item",
+        "id": "apple_macintosh"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

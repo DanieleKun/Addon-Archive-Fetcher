@@ -1,0 +1,58 @@
+{
+  "spec": 1,
+  "id": "example-multi-console",
+  "name": "Example with several consoles",
+  "version": "2026.11.22",
+  "description": "Shows folders, single files and an explicit format. All identifiers are placeholders.",
+  "homepage": "https://example.com/my-addon",
+  "categories": [
+    {
+      "id": "nintendo",
+      "name": "Nintendo",
+      "consoles": [
+        {
+          "id": "nintendo-gba",
+          "name": "Nintendo - Game Boy Advance",
+          "collections": [
+            {
+              "title": "Everything in the item",
+              "source": { "type": "archive.org-item", "id": "your-gba-item" }
+            },
+            {
+              "title": "Only a sub-folder of another item",
+              "source": { "type": "archive.org-item", "id": "your-big-item", "path": "roms/gba" }
+            }
+          ]
+        },
+        {
+          "id": "nintendo-snes",
+          "name": "Nintendo - Super Nintendo Entertainment System",
+          "collections": [
+            {
+              "title": "One zip with the whole console: games listed one by one",
+              "source": { "type": "archive.org-item", "id": "your-big-item", "path": "roms/snes-set.zip",
+        "expand": "zip" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sony",
+      "name": "Sony",
+      "consoles": [
+        {
+          "id": "sony-ps1",
+          "name": "Sony - PlayStation",
+          "collections": [
+            {
+              "title": "PS1 CHD images",
+              "format": "chd",
+              "source": { "type": "archive.org-item", "id": "your-ps1-chd-item", "path": "chd" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

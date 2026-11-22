@@ -1,0 +1,25 @@
+{
+  "spec": 1,
+  "id": "my-first-addon",
+  "name": "My first addon",
+  "version": "1.0.0",
+  "description": "One collection, one console. Replace the identifier with a real Internet Archive item.",
+  "categories": [
+    {
+      "id": "sony",
+      "name": "Sony",
+      "consoles": [
+        {
+          "id": "sony-psp",
+          "name": "Sony - PlayStation Portable",
+          "collections": [
+            {
+              "title": "My PSP collection",
+              "source": { "type": "archive.org-item", "id": "your-item-identifier" }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
