@@ -1,6 +1,6 @@
 # Cartshelf addons
 
-Addons for **Cartshelf**, an Android app that browses and downloads game files, console by console, from the
+Addons for **[Cartshelf](https://github.com/DanieleKun/Cartshelf)**, an Android app that browses and downloads game files, console by console, from the
 Internet Archive and other public websites.
 The app contains no catalog of its own: *addons* tell it which Internet Archive collections exist and which console
 each one belongs to. This repository holds
