@@ -30,6 +30,7 @@ MAX_COLLECTIONS_PER_CONSOLE = 2_000
 
 ADDON_ID = re.compile(r"[a-z0-9][a-z0-9._-]{1,63}")
 SLUG = re.compile(r"[a-z0-9][a-z0-9-]{0,59}")
+THUMBNAILS = re.compile(r"[A-Za-z0-9][A-Za-z0-9 _.-]{0,79}")
 ARCHIVE_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,99}")
 FORMAT = re.compile(r"[a-z0-9]{1,8}")
 
@@ -192,6 +193,9 @@ def _validate_console(console: Any, where: str, report: Report, console_ids: set
     else:
         console_ids.add(console_id)
     _text(console.get("name"), f"{where}.name", report, maximum=80)
+    thumbnails = console.get("thumbnails")
+    if "thumbnails" in console and not (isinstance(thumbnails, str) and THUMBNAILS.fullmatch(thumbnails)):
+        report.errors.append(f"{where}.thumbnails: must be 1-80 letters, digits, spaces or - _ ., starting with a letter or digit (a libretro-thumbnails system name)")
     collections = console.get("collections")
     if not isinstance(collections, list):
         report.errors.append(f"{where}.collections: must be an array")

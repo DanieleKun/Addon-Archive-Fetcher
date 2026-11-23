@@ -75,6 +75,7 @@ searching targeted: the user picks a manufacturer, then a console, and only then
 | `id`          | string | `^[a-z0-9][a-z0-9-]{0,59}$`, unique in the **whole manifest** (not only inside its category). |
 | `name`        | string | 1–80 characters. Use the No-Intro / Redump style, e.g. `Nintendo - Game Boy Advance`. |
 | `collections` | array  | The [collections](#4-collections-and-sources) available for this console. A console without collections is not shown. |
+| `thumbnails`  | string | Optional, 1–80 characters of letters, digits, spaces and `- _ .`, starting with a letter or digit. The [libretro-thumbnails](https://github.com/libretro-thumbnails) system with this console's box art, as libretro names it, e.g. `Sega - Mega Drive - Genesis`. Only needed when the console uses an id that is not in `spec/platforms.json` and its `name` differs from libretro's: the app already knows the box art of every canonical console, and ignores this field for them. |
 
 **Use the canonical ids.** [`spec/platforms.json`](../spec/platforms.json) lists the ids of the common categories and
 consoles ([human-readable version](PLATFORMS.md)). Reusing them lets the app merge your addon with others: a user with two
@@ -225,3 +226,4 @@ the validator wins.
 
 - **1** — first version: categories, consoles, collections, the `archive.org-item` source.
 - **1, additive** — the `http-directory`, `file-list` and `files` sources, and the rules for web addresses.
+- **1, additive** — the optional console field `thumbnails`, naming where the box art lives.

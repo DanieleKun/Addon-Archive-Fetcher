@@ -48,6 +48,15 @@ class Rejections(unittest.TestCase):
         self.assertFalse(report.ok, "expected the manifest to be rejected")
         self.assertTrue(any(needle in error for error in report.errors), report.errors)
 
+    def test_console_thumbnails_is_optional_and_checked(self):
+        manifest = base()
+        console = manifest["categories"][0]["consoles"][0]
+        console["thumbnails"] = "Sega - Mega Drive - Genesis"
+        self.assertEqual([], validate_manifest(manifest).errors)
+        for bad in ("../../elsewhere", "..", ".", None, 5):
+            console["thumbnails"] = bad
+            self.assertTrue(any("thumbnails" in error for error in validate_manifest(manifest).errors), bad)
+
     def test_wrong_spec_version(self):
         manifest = base()
         manifest["spec"] = 2
